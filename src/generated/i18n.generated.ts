@@ -59,6 +59,7 @@ export type I18nTranslations = {
         "user": string;
         "token": string;
         "hote": string;
+        "room": string;
         "hotel": string;
     };
 };
