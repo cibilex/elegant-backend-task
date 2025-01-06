@@ -58,6 +58,8 @@ export type I18nTranslations = {
     "words": {
         "user": string;
         "token": string;
+        "hote": string;
+        "hotel": string;
     };
 };
 /* prettier-ignore */

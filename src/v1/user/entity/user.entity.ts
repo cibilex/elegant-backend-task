@@ -10,7 +10,7 @@ export class User extends BaseEntity {
   })
   @Column({
     type: 'varchar',
-    length: 50,
+    length: 70,
   })
   email: string;
 

@@ -3,7 +3,7 @@ import { IsString, MaxLength, MinLength } from 'class-validator';
 export class CreateUserDto {
   @IsString()
   @MinLength(4)
-  @MaxLength(40)
+  @MaxLength(70)
   email: string;
 
   @IsString()

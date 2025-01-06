@@ -1,6 +1,6 @@
 confirmed: Kullanıcı başarıyla doğrulandı.
 completed: İşlem başarıyla tamamlandı.
-registered: Kayıt işlemi başarıyla tamamlandı.
+registered: Kayıt işlemi başarıyla tamamlandı.Lütfen Hesabınızı doğrulayınız.
 logged_in: Başarılı şekilde giriş yapıldı.
 logged_out: Başarılı şekilde çıkış yapıldı.
 created: '$t({property}) başarıyla oluşturuldu.'

@@ -177,7 +177,7 @@ export class RedisService {
 
     await this.nodemailerService.sendEmailNotify({
       email,
-      link: `${this.configService.get('BASE_URL')}/confirm?token=${token}`,
+      link: `${this.configService.get('BASE_URL')}/verify/${token}`,
       target: NodeMailerTargets.EMAIL_CONFIRMATION,
     });
     return token;

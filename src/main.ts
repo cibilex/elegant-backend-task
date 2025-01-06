@@ -14,11 +14,8 @@ import { ResponseInterceptor } from './response/response.interceptor';
 import { addSwagger } from './lib/swagger';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
-
-  app.enableCors({
-    origin: ['*'],
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  const app = await NestFactory.create(AppModule, {
+    cors: true,
   });
 
   app.setGlobalPrefix('api');
