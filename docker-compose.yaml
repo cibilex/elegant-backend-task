@@ -1,0 +1,26 @@
+version: '3'
+services:
+  postgresql:
+    container_name: el-postgres
+    image: bitnami/postgresql:latest
+    environment:
+      - POSTGRESQL_USERNAME=elegant_user
+      - POSTGRESQL_PASSWORD=Eug0Chohdi3neej0BeiY6fai9chon6ie
+      - POSTGRESQL_POSTGRES_PASSWORD=ieN1AeJ0sie1authiehohZo1yuy3ohke
+    volumes:
+      - el-postgres:/bitnami/postgresql
+    ports:
+      - '5432:5432'
+  redis:
+    container_name: el-redis
+    image: bitnami/redis:latest
+    environment:
+      - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL,CONFIG
+      - REDIS_PASSWORD=athahz1OolieWeichae0iwohf1uwaicu
+    ports:
+      - '6379:6379'
+    volumes:
+      - el-redis:/bitnami/redis/data
+volumes:
+  el-postgres:
+  el-redis:

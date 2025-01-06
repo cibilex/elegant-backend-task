@@ -1,0 +1,50 @@
+@baseURL = http://localhost:5050/api/v1/user
+
+
+
+
+
+
+######
+POST {{baseURL}}
+Content-Type: application/json
+
+{
+    "email":"mehmetilhan1799@icloud.com",
+    "password":"cibilex"
+}
+
+####
+POST {{baseURL}}/verify
+Content-Type: application/json
+
+{
+"token":"81b931b315eab5d62e8d8abfc85580331d8d41e64646b06ac13e44842587508c8348ba172107ded7eb766f7274b1984a"
+}
+
+
+
+######
+POST {{baseURL}}/login
+Content-Type: application/json
+
+{
+    "email":"mehmetilhan1799@icloud.com",
+    "password":"cibilex",
+    "rememberMe":false
+}
+
+######
+GET  {{baseURL}}/profile
+Content-Type: application/json
+Authorization: Bearer 6ca24fd0eda9ae9cfe2c2b0fea7132d65299d2286ac4b16df9ff79b58dae0526f45828dace8faf1054cfe89110052044
+
+
+
+######
+GET {{baseURL}}/logout
+Content-Type: application/json
+
+
+
+
