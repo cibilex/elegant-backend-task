@@ -1,4 +1,4 @@
-@baseURL = http://localhost:5050/api/v1/user
+@baseURL = http://13.60.30.171:7020/api/v1/user
 
 
 
@@ -6,7 +6,7 @@
 
 
 ######
-POST http://localhost:5050/api/v1/user/login
+POST {{baseURL}}
 Content-Type: application/json
 
 {
